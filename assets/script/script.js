@@ -9,13 +9,18 @@ window.addEventListener("scroll", () => {
 
 menuBtn.addEventListener("click", () => {
   const isOpen = nav.classList.toggle("open");
+
+  menuBtn.classList.toggle("active", isOpen);
   menuBtn.setAttribute("aria-expanded", String(isOpen));
+  menuBtn.setAttribute("aria-label", isOpen ? "Fechar menu" : "Abrir menu");
 });
 
 nav.querySelectorAll("a").forEach((link) => {
   link.addEventListener("click", () => {
     nav.classList.remove("open");
+    menuBtn.classList.remove("active");
     menuBtn.setAttribute("aria-expanded", "false");
+    menuBtn.setAttribute("aria-label", "Abrir menu");
   });
 });
 
