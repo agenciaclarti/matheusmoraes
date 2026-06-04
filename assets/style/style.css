@@ -1,7 +1,7 @@
 :root {
-  --navy: #071b33;
-  --navy-2: #0d2b4d;
-  --navy-3: #12385f;
+  --navy: #262B3E;
+  --navy-2: #161a29;
+  --navy-3: #313752;
   --gold: #c89b3c;
   --gold-2: #e3bd66;
   --white: #ffffff;
@@ -191,7 +191,7 @@ p {
   gap: 54px;
 }
 .hero-content p {
-  font-size: 1.12rem;
+  font-size: 1rem;
   max-width: 610px;
   margin-bottom: 30px;
 }
@@ -245,6 +245,7 @@ p {
   padding: 16px;
 }
 .hero-photo img {
+  margin: 0 auto;
   border-radius: calc(var(--radius) + 8px);
 }
 
@@ -544,7 +545,7 @@ blockquote {
 }
 
 .footer {
-  background: #041020;
+  background: #141620;
   color: var(--white);
   padding: 54px 0 28px;
 }
